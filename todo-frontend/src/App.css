@@ -1,0 +1,127 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.todo:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.todo span {
+  flex: 1;
+  text-align: left;
+  color: #333;
+}
+
+.todo button {
+  margin-left: 10px;
+}
+
+.todo button:first-child {
+  background-color: #0275d8;
+  color: white;
+}
+
+.todo button:last-child {
+  background-color: #d9534f;
+  color: white;
+}
+
+.todo span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .todo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
